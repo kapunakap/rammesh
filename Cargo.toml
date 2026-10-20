@@ -1,0 +1,25 @@
+[package]
+name = "rammesh"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Bounded, mutually authenticated, wired-DRAM donor for macOS"
+repository = "https://github.com/kapunakap/rammesh"
+readme = "README.md"
+
+[dependencies]
+libc = "0.2"
+rustls = { version = "0.23", default-features = false, features = ["std", "ring"] }
+rustls-pemfile = "2"
+sha2 = "0.10"
+serde_json = "1"
+signal-hook = "0.3"
+zeroize = "1"
+
+[build-dependencies]
+cc = "1"
+
+[profile.release]
+strip = true
+lto = "thin"
+codegen-units = 1

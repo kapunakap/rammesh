@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-20",
+  "hardware": {
+    "model": "MacBookPro13,3",
+    "cpu": "Intel Core i7-6700HQ, 2.60 GHz, 4 cores / 8 threads",
+    "physical_ram_gib": 16,
+    "os": "macOS 15.8.1 (24H32)",
+    "architecture": "x86_64"
+  },
+  "transport": "TLS1.3/mTLS TCP",
+  "scope": "sequential RPC; established connection; same-Mac loopback when addr is loopback; no LAN measurement",
+  "timing": "RPC elapsed; read comparison is outside measured interval; no pipelining",
+  "rows": [
+    {
+      "block_bytes": 4096,
+      "iterations_per_round": 1000,
+      "read_latency": {
+        "max_us": 241.708,
+        "p50_us": 59.573,
+        "p95_us": 100.263,
+        "p99_us": 138.046,
+        "samples": 3000
+      },
+      "read_mib_s": 60.47458269609359,
+      "rounds": 3,
+      "write_latency": {
+        "max_us": 234.048,
+        "p50_us": 59.217,
+        "p95_us": 91.533,
+        "p99_us": 138.134,
+        "samples": 3000
+      },
+      "write_mib_s": 60.20021903196318
+    },
+    {
+      "block_bytes": 65536,
+      "iterations_per_round": 256,
+      "read_latency": {
+        "max_us": 688.34,
+        "p50_us": 161.516,
+        "p95_us": 271.54,
+        "p99_us": 355.036,
+        "samples": 768
+      },
+      "read_mib_s": 347.4633553563326,
+      "rounds": 3,
+      "write_latency": {
+        "max_us": 439.736,
+        "p50_us": 159.49,
+        "p95_us": 282.682,
+        "p99_us": 363.952,
+        "samples": 768
+      },
+      "write_mib_s": 352.09873881459265
+    },
+    {
+      "block_bytes": 1048576,
+      "iterations_per_round": 128,
+      "read_latency": {
+        "max_us": 2755.686,
+        "p50_us": 1230.345,
+        "p95_us": 1611.99,
+        "p99_us": 2014.846,
+        "samples": 384
+      },
+      "read_mib_s": 771.8945103875528,
+      "rounds": 3,
+      "write_latency": {
+        "max_us": 2365.545,
+        "p50_us": 1359.693,
+        "p95_us": 1772.448,
+        "p99_us": 2039.819,
+        "samples": 384
+      },
+      "write_mib_s": 705.6608415926205
+    }
+  ],
+  "donor_capacity_bytes": 134217728,
+  "ram_evidence": {
+    "all_resident": true,
+    "capacity_bytes": 134217728,
+    "mapping": "MAP_PRIVATE | MAP_ANON; VM tag 240",
+    "mlock_succeeded": true,
+    "paged_out_pages": 0,
+    "resident_pages": 32768,
+    "total_pages": 32768,
+    "vm_region_bytes": 134217728,
+    "vm_region_external_pager": 0,
+    "vm_region_query_ok": true,
+    "vm_region_resident_pages": 32768,
+    "vm_region_swapped_pages": 0,
+    "vm_region_user_wired_count": 1
+  },
+  "validation": {
+    "integration_checks_passed": 23,
+    "unit_tests_passed": 2,
+    "data_retention_bytes": 50331648,
+    "sigterm_shutdown_seconds": 0.12150463600028161
+  },
+  "privacy": "Hostnames, addresses, process IDs, local paths, interface identifiers, raw logs and credentials omitted."
+}
